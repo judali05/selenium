@@ -1,0 +1,5 @@
+- python -m pip venv "Nombre Para la carpeta" //este comando crea la carpeta de entorno de tarbajo
+- env\scripts\activate //este activa el entorno de trabajo que se alla creado
+- deactivate //este desactiva el entorno de trabajo que se esta usando
+- python -m pip freeze > requirements.txt // este comando muestras las librerias que se usaron para realizar el codigo
+- pip install selenium //este descarga la librerias de selenium
