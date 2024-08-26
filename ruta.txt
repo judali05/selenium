@@ -1,5 +1,23 @@
+PREPARAR ENTORNO DE TRABAJO
+- Set-ExecutionPolicy RemoteSigned //cargar scripts mediante powersell ejecutandolo como administrador
 - python -m pip venv "Nombre Para la carpeta" //este comando crea la carpeta de entorno de tarbajo
 - env\scripts\activate //este activa el entorno de trabajo que se alla creado
 - deactivate //este desactiva el entorno de trabajo que se esta usando
 - python -m pip freeze > requirements.txt // este comando muestras las librerias que se usaron para realizar el codigo
+
+INSTALACION
 - pip install selenium //este descarga la librerias de selenium
+- Descargar el driver del navegador que se quiera usar
+
+TEMAS
+FROM selenium.webdriver.common.by importar BY  // PARA LOCALIZAR EL ELEMNETO TOCA IMPORTAR EL BY
+Por.ID	Se devolverá el primer elemento con el valor del atributo id que coincida con la ubicación.
+BY.NAME	Se devolverá el primer elemento con el valor del atributo de nombre que coincida con la ubicación.
+Por.XPATH	Se devolverá el primer elemento con la sintaxis xpath que coincida con la ubicación.
+Por.LINK_TEXT	Se devolverá el primer elemento con el valor del texto del enlace que coincida con la ubicación.
+Por.PARTIAL_LINK_TEXT	Se devolverá el primer elemento con el valor de texto del enlace parcial que coincida con la ubicación.
+Por.TAG_NAME	Se devolverá el primer elemento con el nombre de etiqueta dado.
+Por.CLASS_NAME	Se devolverá el primer elemento con el nombre de atributo de clase coincidente.
+Por CSS_SELECTOR	Se devolverá el primer elemento con el selector CSS coincidente.
+
+element = driver.find_element(By.NAME, 'login')  //CAPTURAR EL ELEMENTO
