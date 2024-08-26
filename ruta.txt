@@ -21,3 +21,101 @@ Por.CLASS_NAME	Se devolverá el primer elemento con el nombre de atributo de cla
 Por CSS_SELECTOR	Se devolverá el primer elemento con el selector CSS coincidente.
 
 element = driver.find_element(By.NAME, 'login')  //CAPTURAR EL ELEMENTO
+
+- "nombre de la variable" = driver.find_element(By.ID, '')
+- "nombre de la variable" = driver.find_element(By.NAME, '')
+- "nombre de la variable" = driver.find_element(Por.XPATH, "/html/body/form[1]") -- "nombre de la variable" = driver.find_element(Por.XPATH, "//form[1]")
+- "nombre de la variable" = driver.find_element(By.LINK_TEXT, 'Continuar')
+- "nombre de la variable" = driver.find_element(By.PARTIAL_LINK_TEXT, 'Conti')
+- "nombre de la variable" = driver.find_element(By.TAG_NAME, 'h1')
+- "nombre de la variable" = driver.find_element(By.CLASS_NAME, 'content')
+- "nombre de la variable" = driver.find_element(Por.CSS_SELECTOR, 'p.content')
+
+Resumen de Funciones y Métodos de Selenium
+1. Inicialización del WebDriver
+webdriver.Firefox(): Crea una instancia del navegador Firefox.
+webdriver.Chrome(): Crea una instancia del navegador Chrome.
+webdriver.Edge(): Crea una instancia del navegador Microsoft Edge.
+webdriver.Safari(): Crea una instancia del navegador Safari.
+2. Navegación y Control de la Página
+driver.get(url): Navega a la URL especificada.
+driver.refresh(): Recarga la página actual.
+driver.back(): Navega hacia atrás en el historial del navegador.
+driver.forward(): Navega hacia adelante en el historial del navegador.
+3. Interacción con Elementos
+driver.find_element(By.ID, value): Encuentra un elemento por su ID.
+driver.find_element(By.NAME, value): Encuentra un elemento por su nombre.
+driver.find_element(By.CLASS_NAME, value): Encuentra un elemento por su clase.
+driver.find_element(By.TAG_NAME, value): Encuentra un elemento por su nombre de etiqueta.
+driver.find_element(By.LINK_TEXT, value): Encuentra un enlace por su texto visible.
+driver.find_element(By.PARTIAL_LINK_TEXT, value): Encuentra un enlace por una parte del texto visible.
+driver.find_element(By.XPATH, value): Encuentra un elemento usando una expresión XPath.
+driver.find_element(By.CSS_SELECTOR, value): Encuentra un elemento usando un selector CSS.
+4. Operaciones en Elementos
+element.click(): Realiza un clic en el elemento.
+element.send_keys(keys): Envía una secuencia de teclas al elemento (como rellenar formularios).
+element.clear(): Borra el texto en un campo de entrada.
+element.get_attribute(name): Obtiene el valor de un atributo del elemento.
+element.text: Obtiene el texto visible del elemento.
+element.is_displayed(): Verifica si el elemento es visible.
+element.is_enabled(): Verifica si el elemento está habilitado.
+element.is_selected(): Verifica si el elemento está seleccionado (útil para checkboxes o opciones de radio).
+5. Manipulación de Ventanas y Pestañas
+driver.switch_to.window(window_handle): Cambia el enfoque a una ventana o pestaña específica.
+driver.switch_to.frame(frame_reference): Cambia el enfoque a un iframe específico.
+driver.switch_to.default_content(): Vuelve al contenido principal desde un iframe.
+driver.window_handles: Obtiene una lista de todos los manejadores de ventanas/pestañas abiertas.
+6. JavaScript y Cookies
+driver.execute_script(script, *args): Ejecuta un script JavaScript en el contexto del navegador.
+driver.execute_async_script(script, *args): Ejecuta un script JavaScript asíncrono.
+driver.get_cookies(): Obtiene todas las cookies del navegador.
+driver.add_cookie(cookie_dict): Añade una cookie al navegador.
+driver.delete_cookie(name): Elimina una cookie por su nombre.
+driver.delete_all_cookies(): Elimina todas las cookies del navegador.
+7. Esperas
+driver.implicitly_wait(time): Establece el tiempo de espera implícito para la búsqueda de elementos.
+WebDriverWait(driver, timeout): Crea una instancia de espera explícita.
+WebDriverWait(driver, timeout).until(EC.condition): Espera hasta que se cumpla una condición específica.
+8. Acciones Avanzadas
+ActionChains(driver): Crea un objeto ActionChains para realizar acciones avanzadas como clics, movimientos, y arrastres.
+action.move_to_element(element): Mueve el ratón al elemento.
+action.click(element): Hace clic en el elemento.
+action.drag_and_drop(source, target): Arrastra un elemento y lo suelta en otro.
+action.context_click(element): Hace clic derecho (contexto) en el elemento.
+action.double_click(element): Hace doble clic en el elemento.
+action.perform(): Ejecuta todas las acciones en la cadena de ActionChains.
+9. Capturas de Pantalla
+driver.get_screenshot_as_file(filename): Toma una captura de pantalla y la guarda en el archivo especificado.
+driver.get_screenshot_as_base64(): Devuelve la captura de pantalla en formato Base64.
+driver.get_screenshot_as_png(): Devuelve la captura de pantalla en formato PNG.
+10. Manejo de Alertas
+driver.switch_to.alert: Accede a las alertas del navegador.
+driver.switch_to.alert.accept(): Acepta la alerta.
+driver.switch_to.alert.dismiss(): Rechaza la alerta.
+driver.switch_to.alert.send_keys(keys): Envía texto a la alerta (si es una alerta de confirmación con un campo de entrada).
+driver.switch_to.alert.text: Obtiene el texto de la alerta.
+Resumen
+Selenium WebDriver proporciona una amplia gama de funciones para automatizar la interacción con páginas web. Estas funciones abarcan desde la simple navegación y búsqueda de elementos hasta acciones complejas como arrastrar y soltar, y manejar ventanas emergentes. La flexibilidad y el control que ofrece Selenium permiten crear pruebas automatizadas y scripts de automatización robustos para diversas aplicaciones web.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
