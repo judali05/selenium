@@ -1,6 +1,6 @@
 PREPARAR ENTORNO DE TRABAJO
 - Set-ExecutionPolicy RemoteSigned //cargar scripts mediante powersell ejecutandolo como administrador
-- python -m pip venv "Nombre Para la carpeta" //este comando crea la carpeta de entorno de tarbajo
+- python -m venv "Nombre Para la carpeta" //este comando crea la carpeta de entorno de tarbajo
 - env\scripts\activate //este activa el entorno de trabajo que se alla creado
 - deactivate //este desactiva el entorno de trabajo que se esta usando
 - python -m pip freeze > requirements.txt // este comando muestras las librerias que se usaron para realizar el codigo
